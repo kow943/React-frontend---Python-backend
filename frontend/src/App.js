@@ -27,19 +27,17 @@ class App extends Component {
             </Row>
           </Col>
           <Col>
-            <Col>
-              <PieChart width={500} height={400}>
-                <Pie data={data} dataKey="students" outerRadius={100}>
-                  {
-                    data.map((entry, index) => (
-                      <Cell key={`cell-${index}`} fill={colors[index]}/>
-                    ))
-                  }
-                </Pie>
-                <Legend />
-                <Tooltip />
-              </PieChart>
-            </Col>
+            <PieChart width={500} height={400}>
+              <Pie data={data} dataKey="students" outerRadius={100}>
+                {
+                  data.map((entry, index) => (
+                    <Cell key={`cell-${index}`} fill={colors[index]}/>
+                  ))
+                }
+              </Pie>
+              <Legend />
+              <Tooltip />
+            </PieChart>
           </Col>
         </Container>
       </div>

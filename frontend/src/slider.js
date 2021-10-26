@@ -7,8 +7,7 @@ function SimpleSlider() {
     const [ value, setValue ] = useState(0); 
 
     return ( 
-        <Form >
-            <Form.Group as={Row}>
+            <Form.Group as={Row} className = "mt-3">
                 <Col sm ={2}>
                     <label style = {{float:"left"}}>Interest rate: </label>
                 </Col>
@@ -23,7 +22,6 @@ function SimpleSlider() {
                     />
                 </Col>
             </Form.Group>
-        </Form>
     );
 }
 

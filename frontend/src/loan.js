@@ -7,20 +7,20 @@ function LoanAmount() {
 
     return (
         <Form>
-            <Row className = "mt-3">
-                <Col sm ={2}>
-                    <label style = {{float:"left"}}>Loan Amount: </label>
-                </Col>
-                <Col>
-                    <input type="text" style = {{float:"left"}}/>
-                </Col>
-            </Row>
-            <Row className = "mt-3">
-                <SimpleSlider />
-            </Row>
-            <Row className = "mt-3">
+            <Form.Group className = "mt-3">
+                <Row>
+                    <Col sm ={2}>
+                        <label style = {{float:"left"}}>Loan Amount: </label>
+                    </Col>
+                    <Col>
+                        <input type="text" style = {{float:"left"}}/>
+                    </Col>
+                </Row>
+            </Form.Group>
+            <SimpleSlider />
+            <Form.Group className = "mt-3">
               <Dropdowns />
-            </Row>
+            </Form.Group>
             <input type="submit" value="Submit" style = {{float:"left"}}/>
         </Form>
     );
