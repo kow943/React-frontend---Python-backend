@@ -6,7 +6,7 @@ import { Col, Row, Form } from 'react-bootstrap';
 function LoanAmount() {
 
     return (
-        <Form>
+        <Form >
             <Form.Group className = "mt-3">
                 <Row>
                     <Col sm ={2}>
@@ -21,7 +21,7 @@ function LoanAmount() {
             <Form.Group className = "mt-3">
               <Dropdowns />
             </Form.Group>
-            <input type="submit" value="Submit" style = {{float:"left"}}/>
+            <input className = "mt-3" type="submit" value="Submit" style = {{float:"left"}}/>
         </Form>
     );
 }

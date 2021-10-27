@@ -3,6 +3,7 @@ import './App.css';
 import Dropdowns from "./dropdown";
 import SimpleSlider from "./slider";
 import LoanAmount from "./loan";
+import Welcome from "./form";
 import { Container, Col, Row } from 'react-bootstrap';
 import { PieChart, Pie, Legend, Tooltip, Cell } from 'recharts';
 
@@ -23,7 +24,7 @@ class App extends Component {
               <h1>Loan Payment Calculator</h1>
             </Row>
             <Row className = "mt-3">
-              <LoanAmount />
+              <Welcome />
             </Row>
           </Col>
           <Col>
