@@ -1,6 +1,6 @@
 import 'bootstrap/dist/css/bootstrap.css';
 import RangeSlider from 'react-bootstrap-range-slider';
-import React, {useState, useEffect } from 'react';
+import React, { useState } from 'react';
 import { Form, Col, Row } from 'react-bootstrap';
 
 function SimpleSlider() {
